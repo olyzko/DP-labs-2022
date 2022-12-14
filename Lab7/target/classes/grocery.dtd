@@ -1,0 +1,15 @@
+<!ELEMENT Grocery (Category*) >
+<!ELEMENT Category  (Product*) >
+<!ELEMENT Product ANY>
+
+<!ATTLIST Category
+        id CDATA #REQUIRED
+        categoryName CDATA #REQUIRED
+        >
+<!ATTLIST Product
+        id CDATA #REQUIRED
+        productName CDATA #REQUIRED
+        amount CDATA #REQUIRED
+        price CDATA #REQUIRED
+        >
+
